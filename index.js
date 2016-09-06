@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var request = require('request');
 var app = express();
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 var VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 
 // parse application/x-www-form-urlencoded
